@@ -1,0 +1,253 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 1%;
+    padding: 1%;
+}
+
+.total_value {
+    margin-top: 5px;
+    margin-left: 125px;
+    width: 190px;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px dashed cyan;
+}
+
+#total-amount {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/* data box */
+
+.fl-left {
+    float: left;
+}
+
+.fl-left1 {
+    float: left;
+    margin-left: 15px;
+}
+
+.data-box {
+    border: 1px solid turquoise;
+    height: 35%;
+    width: 80%;
+    grid-gap: 2%;
+    padding-top: 1%;
+    padding-left: 20%;
+    background-color: turquoise;
+    display: grid;
+    grid-template-columns: 8% 20% 20% 25%;
+    grid-template-rows: 30% 30% 30%;
+}
+
+.img1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid rgb(10, 253, 83);
+}
+
+#earn-src {
+    height: 40px;
+    width: 20%;
+    padding: .1%;
+    margin: 1%;
+    float: left;
+}
+
+.em {
+    padding-left: 1%;
+    color: cornsilk;
+    text-align: center;
+    background-color: rgb(105, 223, 111);
+    margin-bottom: 1%;
+}
+
+
+/* Hover start */
+
+.em:hover {
+    box-shadow: 5px 8px 16px 0 rgb(231, 171, 130);
+    ;
+}
+
+.img1:hover {
+    box-shadow: 5px 4px 6px 0 #FF5733;
+}
+
+.edit:hover {
+    box-shadow: 5px 4px 6px 0 #FF5733;
+}
+
+#income1:hover {
+    box-shadow: 5px 4px 6px 0 #FF5733;
+}
+
+.submit:hover {
+    box-shadow: 5px 4px 6px 0 #FF5733;
+}
+
+#spent:hover {
+    box-shadow: 5px 4px 6px 0 #FF5733;
+}
+
+
+/* hover end */
+
+.edit {
+    padding: 3%;
+    background-color: cornsilk;
+    border: none
+}
+
+#income1 {
+    padding: 3%;
+    border: none;
+    width: 115px;
+    background-color: cornsilk;
+}
+
+#spent {
+    padding: 3%;
+    border: none;
+    background-color: cornsilk;
+}
+
+.submit {
+    padding: 3%;
+    width: 55%;
+    border: none;
+    margin-top: 10px;
+    animation-name: test;
+    animation-duration: 60s;
+}
+
+.submit2 {
+    padding: 3%;
+    width: 55%;
+    border: none;
+    margin-top: 10px;
+    animation-name: test;
+    animation-duration: 60s;
+}
+
+
+/* hr */
+
+.hr {
+    height: 5px;
+    background-color: rgb(38, 80, 80);
+    margin-top: 5px;
+    border: none;
+}
+
+.hr-data {
+    width: 80px;
+}
+
+
+/* income records */
+
+#income-record {
+    border-radius: 5px;
+    border: 2px solid cyan;
+    margin-top: 0px;
+    float: left;
+    grid-gap: 10px;
+}
+
+
+/* grid box for income source */
+
+.grid-box1 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+}
+
+.grid-box1 div {
+    border: 1px solid cyan;
+}
+
+@keyframes test {
+    0% {
+        background-color: rgb(223, 152, 152);
+    }
+    25% {
+        background-color: rgb(212, 212, 95);
+    }
+    50% {
+        background-color: rgb(125, 125, 204);
+    }
+    100% {
+        background-color: rgb(159, 233, 159);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    /* .img1 {
+        display: none;
+    }
+    .head {
+        display: none;
+    } */
+    .data-box {
+        border: 1px solid turquoise;
+        height: 60%;
+        width: 100%;
+        grid-gap: 5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        background-color: turquoise;
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: 59px 59px 59px;
+        float: left;
+    }
+    .submit {
+        padding: 3%;
+        width: 100%;
+        border: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        animation-name: test;
+        animation-duration: 60s;
+        float: left;
+    }
+    .submit2 {
+        padding: 3%;
+        width: 100%;
+        border: none;
+        margin-top: 0px;
+        animation-name: test;
+        animation-duration: 60s;
+    }
+    #incomeAmountValues {
+        margin-top: 15px;
+    }
+    /* .item1 {
+        grid-area: 2 / 1 / span 1 / span 2
+    }
+    .item3 {
+        grid-area: 1 / 1 / span 1 / span 2
+    }
+    /* .item3 {
+        grid-area: 3 / 1 / span 1 / span 3
+    } */
+    /* .item4 {
+        grid-area: 4 / 1 / span 4 / span 2
+    } */
+}

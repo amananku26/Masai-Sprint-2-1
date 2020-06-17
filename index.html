@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint-2</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1 class="em">Expense Manager</h1>
+    <div class="data-box">
+        <div> <img class="img1" src="resource/2.png" alt=""></div>
+        <div class="item3"> <label class="head" for="income">Add Income Amount &#8595</label>
+            <input id="incomeAmountValues" name="incomeAmount" class="edit" type="number" placeholder="Enter Income Money" /></div>
+
+        <div class="item1">
+            <label class="head" for="spent">Select Source &#8595</label><br>
+            <select id="income1">
+                <option>Income</option> 
+                <option>Intrest</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="item2">
+            <button class="submit amountEntry" onclick="IncomeAmountEntry()">Submit</button></div>
+        <div><img class="img1" src="resource/3.png" alt=""></div>
+        <div class="item4"> <label class="head" for="spent">Add Spent Amount &#8595</label> <br>
+            <input class="edit" id="spentAmount" type="number" placeholder="Enter Spent Money" /></div>
+
+        <div>
+            <label class="head" for="spent">Select Source &#8595</label><br>
+            <select id="spent">
+                <option >Food</option>
+                <option >Rent</option>
+                <option >Household</option>
+                <option>ELectricity</option>
+                <option >Maintainence</option>
+                <option >other</option>
+            </select>
+        </div>
+        <div><button class="submit2 " onclick="IncomeSpentEntry()">Submit</button></div>
+
+    </div>
+
+    </div>
+    <hr class="hr">
+
+    <div class="grid-box1 fl-left">
+
+        <div>INCOME AMOUNT</div>
+
+        <div>INCOME SOURCE</div>
+
+        <div class="income-name listValues" id="IncomeAmount">
+
+
+        </div>
+
+        <div class="income-source listValues" id="IncomeSource">
+
+
+        </div>
+    </div>
+    <div class="grid-box1 fl-left1">
+
+        <div>SPENT AMOUNT</div>
+
+        <div>SPENT SOURCE</div>
+
+        <div class="income-name listValues" id="spentAmountShow">
+
+
+        </div>
+
+        <div class="income-source listValues" id="spentSource">
+
+
+        </div>
+    </div>
+    <div class="fl-left1 total_value">
+        <h6>CLICK BELOW TO <br> GET THE TOTAL BALANCE</h6>
+        <div><button class="submit2 " onclick="total()">TOTAL</button></div>
+
+        <p id="total-amount"></p>
+    </div>
+</body>
+
+</html>
